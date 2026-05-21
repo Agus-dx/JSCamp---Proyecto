@@ -1,3 +1,3 @@
 export let state = {
-  count: 0
+  count: 0 
 }
