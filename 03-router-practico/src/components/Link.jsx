@@ -1,8 +1,8 @@
-import { Link as NavLink} from "react-router"
+import { Link as NavLink } from 'react-router'
 
 export function Link ({ href, children, ...restOfProps }) {
   return (
-    <NavLink href={href} {...restOfProps}>
+    <NavLink to={href} {...restOfProps}>
       {children}
     </NavLink>
   )

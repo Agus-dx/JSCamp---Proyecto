@@ -55,7 +55,7 @@ export function JobCard({ job }) {
         <p>{job.descripcion}</p>
       </div>
       <div className={styles.actions}>
-        <Link href={`/jobs/${job.id}`} className={styles.details}>
+        <Link href={`/jobs/${job.id}`} className={styles.details} aria-label={`Ver detalles de ${job.title} en ${job.company}`}>
           Ver detalles
         </Link>
         <JobCardApplyButton jobId={job.id} />
